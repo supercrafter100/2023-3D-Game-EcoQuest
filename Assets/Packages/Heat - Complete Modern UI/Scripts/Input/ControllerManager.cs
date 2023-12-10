@@ -167,7 +167,7 @@ namespace Michsky.UI.Heat
 
             // Search for main and custom gameapds
             if (Gamepad.current is XInputController && presetManager != null && presetManager.xboxPreset != null) { currentControllerPreset = presetManager.xboxPreset; }
-#if !UNITY_WEBGL && !UNITY_IOS && !UNITY_ANDROID
+#if !UNITY_WEBGL && !UNITY_IOS && !UNITY_ANDROID && !UNITY_STANDALONE_LINUX
             else if (Gamepad.current is DualSenseGamepadHID && presetManager != null && presetManager.dualsensePreset != null) { currentControllerPreset = presetManager.dualsensePreset; }
 #endif
             else
