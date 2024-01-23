@@ -24,6 +24,7 @@ namespace treePlanter
         // Update is called once per frame
         void Update()
         {
+            // Update ui elements
             treesTextElement.SetText("Bomen geplant: " + trees + " / " + treesGoal);
             seedsTextElement.SetText("Zaden: " + seeds);
         }
