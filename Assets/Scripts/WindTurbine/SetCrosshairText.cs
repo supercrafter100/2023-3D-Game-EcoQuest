@@ -9,13 +9,12 @@ public class SetCrosshairText : MonoBehaviour
     [SerializeField] private Transform playerCameraTransform;
     [SerializeField] private LayerMask pickupLayerMask;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        
+        PlayerPrefs.SetInt("WindTurbine/holdingItem", 0);
     }
-
-    // Update is called once per frame
-    void Update()
+        // Update is called once per frame
+        void Update()
     {
 
         if (PlayerPrefs.GetInt("WindTurbine/holdingItem") == 0)
@@ -46,6 +45,6 @@ public class SetCrosshairText : MonoBehaviour
 
     private void OnApplicationQuit()
     {
-        SetText("");
+        PlayerPrefs.SetInt("WindTurbine/holdingItem", 0); 
     }
 }
