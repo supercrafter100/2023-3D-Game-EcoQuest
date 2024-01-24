@@ -1,12 +1,12 @@
-using System;
-using UnityEngine.UI;
+using TransitionsPlus;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using GradientMode = TransitionsPlus.GradientMode;
 using Random = UnityEngine.Random;
-using System.Collections.Generic;
 
-namespace TransitionsPlus {
+namespace Packages.TransitionsPlus.Runtime.Scripts {
 
     public delegate void TransitionEvent();
 
@@ -210,7 +210,7 @@ namespace TransitionsPlus {
                     }
                 }
                 if (loadSceneAtEnd && !string.IsNullOrEmpty(sceneNameToLoad)) {
-                    SceneManager.LoadScene(sceneNameToLoad, sceneLoadMode);
+                    //SceneManager.LoadScene(sceneNameToLoad, sceneLoadMode);
                 }
             }
         }

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Packages/com.unity.starter-assets/Samples~/Controllers/FirstPersonController/Playground.unity.meta
 guid: 707acc8dffb72b144bb1ffbe1c965f3d
+=======
+guid: 5c966ea530c002246b07effa0203f2da
+>>>>>>> origin/master:Assets/Scenes/WindTurbineScene.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 

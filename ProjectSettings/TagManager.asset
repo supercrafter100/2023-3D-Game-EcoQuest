@@ -5,6 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - CinemachineTarget
+  - TrashItem
+  - RecyclingBin
+  - GameManager
+  - PickableObject
+  - Wing
+  - Seed
   - Dino
   layers:
   - Default
@@ -13,9 +19,9 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Player
+  - Interactable
+  - RecyclingBinLayer
   - 
   - 
   - 
