@@ -20,8 +20,7 @@ public class MainMenu : MonoBehaviour
 
     public void PlayGame()
     {
-        // TODO: Set the correct scene name or index between the parentheses of LoadScene and uncomment
-        // SceneManager.LoadScene("YourSceneName");
+        SceneManager.LoadScene("Level-hub");
         Debug.Log("Play Game button clicked");
     }
 
