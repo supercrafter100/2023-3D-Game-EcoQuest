@@ -8,4 +8,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level-hub.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  m_configObjects: {}
+  - enabled: 1
+    path: Assets/Scenes/TreePlanterScene.unity
+    guid: 9a0ac9183dd7c6e4bb1af61a9ea5770f
+  - enabled: 1
+    path: Assets/Scenes/trashSorter.unity
+    guid: 0152af37e8320954b9fba2877eb75337
+  - enabled: 1
+    path: Assets/Scenes/WindTurbineScene.unity
+    guid: 5c966ea530c002246b07effa0203f2da
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7,
+      type: 2}
