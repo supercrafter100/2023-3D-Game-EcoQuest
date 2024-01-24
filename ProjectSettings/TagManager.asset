@@ -11,6 +11,7 @@ TagManager:
   - PickableObject
   - Wing
   - Seed
+  - Dino
   layers:
   - Default
   - TransparentFX
