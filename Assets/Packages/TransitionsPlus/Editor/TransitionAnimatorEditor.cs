@@ -4,7 +4,9 @@ using System.IO;
 using System.Collections.Generic;
 using System.Reflection;
 using System;
+using Packages.TransitionsPlus.Runtime.Scripts;
 using Object = UnityEngine.Object;
+using RenderMode = Packages.TransitionsPlus.Runtime.Scripts.RenderMode;
 
 namespace TransitionsPlus {
 
