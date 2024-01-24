@@ -43,4 +43,9 @@ public class SetCrosshairText : MonoBehaviour
     {
         crosshairHotkey.SetText(s);
     }
+
+    private void OnApplicationQuit()
+    {
+        SetText("");
+    }
 }
