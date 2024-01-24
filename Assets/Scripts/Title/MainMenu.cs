@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -16,6 +17,8 @@ public class MainMenu : MonoBehaviour
         // Add listeners to the buttons
         playButton.onClick.AddListener(PlayGame);
         exitButton.onClick.AddListener(QuitGame);
+        
+        SessionState.SetBool("hub_cutscene", false); // Just in case
     }
 
     public void PlayGame()
@@ -29,5 +32,4 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
         Debug.Log("Quit Game button clicked");
     }
-
 }
