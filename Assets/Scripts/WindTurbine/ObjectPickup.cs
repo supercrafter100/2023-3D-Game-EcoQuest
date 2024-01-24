@@ -26,7 +26,7 @@ public class ObjectPickup : MonoBehaviour
             float pickUpDistance = 8f;
             if (pickableObject == null)
             {
-                if (Physics.SphereCast(playerCameraTransform.position, 0.3f, playerCameraTransform.forward, out RaycastHit raycastHit, pickUpDistance, pickupLayerMask))
+                if (Physics.SphereCast(playerCameraTransform.position, 0.3f,playerCameraTransform.forward, out RaycastHit raycastHit, pickUpDistance, pickupLayerMask))
                 {
                     if (raycastHit.transform.TryGetComponent(out pickableObject))
                     {
