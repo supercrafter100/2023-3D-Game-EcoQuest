@@ -12,13 +12,13 @@ namespace level_hub
         // Start is called before the first frame update
         void Start()
         {
-            if (SessionState.GetBool("hub_cutscene", false))
+            if (PlayerPrefs.GetInt("hub_cutscene") == 1)
             {
                 playerCamera.GetComponent<CinemachineVirtualCamera>().Priority = 15;
             }
             else
             {
-                SessionState.SetBool("hub_cutscene", true);
+                PlayerPrefs.SetInt("hub_cutscene", 1);
             }
         }
 

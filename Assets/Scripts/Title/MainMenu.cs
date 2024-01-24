@@ -6,30 +6,33 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class MainMenu : MonoBehaviour
+namespace Title
 {
-    // Attach these buttons in the Unity Editor by dragging them into these slots
-    [SerializeField] private Button playButton;
-    [SerializeField] private Button exitButton;
-
-    private void Start()
+    public class MainMenu : MonoBehaviour
     {
-        // Add listeners to the buttons
-        playButton.onClick.AddListener(PlayGame);
-        exitButton.onClick.AddListener(QuitGame);
+        // Attach these buttons in the Unity Editor by dragging them into these slots
+        [SerializeField] private Button playButton;
+        [SerializeField] private Button exitButton;
+
+        private void Start()
+        {
+            // Add listeners to the buttons
+            playButton.onClick.AddListener(PlayGame);
+            exitButton.onClick.AddListener(QuitGame);
         
-        SessionState.SetBool("hub_cutscene", false); // Just in case
-    }
+            PlayerPrefs.SetInt("hub_cutscene", 0); // Just in case
+        }
 
-    public void PlayGame()
-    {
-        SceneManager.LoadScene("Level-hub");
-        Debug.Log("Play Game button clicked");
-    }
+        public void PlayGame()
+        {
+            SceneManager.LoadScene("Level-hub");
+            Debug.Log("Play Game button clicked");
+        }
 
-    public void QuitGame()
-    {
-        Application.Quit();
-        Debug.Log("Quit Game button clicked");
-    }
+        public void QuitGame()
+        {
+            Application.Quit();
+            Debug.Log("Quit Game button clicked");
+        }
+    }   
 }
