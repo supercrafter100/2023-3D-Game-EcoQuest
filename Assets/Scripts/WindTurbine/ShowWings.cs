@@ -6,8 +6,10 @@ using UnityEngine;
 public class ShowWings : MonoBehaviour
 {
     [SerializeField] private Animator animator;
+    [SerializeField] private TMP_Text objectiveText;
     [SerializeField] private TMP_Text objectiveTracker;
     [SerializeField] private AudioSource audioSource;
+    [SerializeField] private ToHub hub;
     private int counter = 0;
     private ToggleRenderer[] renderers;
 
@@ -22,11 +24,7 @@ public class ShowWings : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other is not MeshCollider) return;
-        if (counter >= 3)
-        {
-            return;
-        }
+        if (counter >= 3) return;
         if (other.CompareTag("PickableObject"))
         {
             Debug.Log("PickableObject collided");
@@ -40,6 +38,10 @@ public class ShowWings : MonoBehaviour
         {
             animator.SetTrigger("AllWingsCollected");
             audioSource.Play();
+            hub.LevelCompleted = true;
+            objectiveText.text = "Ga naar de teleporteersteen en druk op F";
+            objectiveTracker.text = "";
+
         }
     }
 }

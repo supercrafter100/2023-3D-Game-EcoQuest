@@ -14,9 +14,8 @@ public class SetCrosshairText : MonoBehaviour
         PlayerPrefs.SetInt("WindTurbine/holdingItem", 0);
     }
         // Update is called once per frame
-        void Update()
+    void Update()
     {
-
         if (PlayerPrefs.GetInt("WindTurbine/holdingItem") == 0)
         {
             float pickUpDistance = 8f;
