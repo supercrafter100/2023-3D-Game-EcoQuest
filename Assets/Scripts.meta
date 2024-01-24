@@ -1,6 +1,10 @@
 fileFormatVersion: 2
-guid: 6c5c0777b15bb413e99b0325b27231c7
+<<<<<<< HEAD:Assets/Scripts.meta
+guid: 79b793774d2d7d3439ec9327c3afd582
 folderAsset: yes
+=======
+guid: 594da9eac4a488a479b252ff922516d9
+>>>>>>> origin/master:Assets/Packages/Fantasy Skybox FREE/Scenes/Demo with terrain.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
