@@ -31,8 +31,7 @@ namespace trashSorting
             if (Input.GetKeyDown(KeyCode.F))
             {
                 Debug.Log("GA NAAR HUB!!!");
-                // TODO: uncomment onderstaande lijn en vul de correcte sceneNr. in (die van de hub)
-                // SceneManager.LoadScene();
+                SceneManager.LoadScene(0);
             }
         }
 
