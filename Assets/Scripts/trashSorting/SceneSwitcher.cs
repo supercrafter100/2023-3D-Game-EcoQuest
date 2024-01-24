@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 namespace trashSorting
 {
-    public class SceneManagement : MonoBehaviour
+    public class SceneSwitcher : MonoBehaviour
     {
         private PlayerInteraction _player;
         private GameManager _gameManager;
@@ -31,6 +31,7 @@ namespace trashSorting
             if (Input.GetKeyDown(KeyCode.F))
             {
                 Debug.Log("GA NAAR HUB!!!");
+                // TODO: uncomment onderstaande lijn en vul de correcte sceneNr. in (die van de hub)
                 // SceneManager.LoadScene();
             }
         }

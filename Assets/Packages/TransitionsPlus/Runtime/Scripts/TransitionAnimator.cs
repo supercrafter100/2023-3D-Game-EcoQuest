@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using GradientMode = TransitionsPlus.GradientMode;
 using Random = UnityEngine.Random;
-using SceneManager = trashSorting.SceneManagement;
 
 namespace Packages.TransitionsPlus.Runtime.Scripts {
 
