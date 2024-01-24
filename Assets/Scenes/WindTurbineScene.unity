@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3892612, g: 0.17590488, b: 0.17162976, a: 1}
+  m_IndirectSpecularColor: {r: 0.38919324, g: 0.1758784, b: 0.1716415, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6996,8 +6996,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Verzamel alle wieken van de windmolen en breng ze naar Berend. Berend
-    wacht op jou bij de windmolen.
+  m_text: 'Verzamel alle wieken van de windmolen en breng ze naar Berend de Dino.
+    Berend wacht op jou bij de windmolen.
 
     Wieken verzameld:   / 3'
   m_isRightToLeft: 0
